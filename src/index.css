@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/40 backdrop-blur-md border border-rose-gold/20;
+  }
+  
+  .aura-glow {
+    box-shadow: 0 0 60px 20px rgba(183, 110, 121, 0.15);
+  }
+  
+  .ethereal-bg {
+    background: radial-gradient(circle at top right, #f9ebea 0%, #fdfbf7 100%);
+  }
+}
+
+/* Custom Scrollbar for Admin/Panels */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #b76e79; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ee2b4b; 
+}
